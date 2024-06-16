@@ -1,0 +1,20 @@
+﻿<h1 class=" mt-5 " align="center">Home Page</h1>
+<div class=" row  mt-4 mb-4 ml-4">
+    @{
+        foreach (var Electrical in Model.getIAllElectrical)
+        {
+            <div class=" po col-lg-3 col-md-1 ml-2 mt-4">
+                <div class="pi"> @Electrical.name</div>
+                <div><img src="@Electrical.img" alt="@Electrical.name" title="@Electrical.name" /></div>
+                <p>shortDesc : @Electrical.shortDesc</p>
+                <p>cost : @Electrical.firstСost.ToString("c") </p>
+                <p>available : @Electrical.available</p>
+                <p>id @Electrical.id</p>
+                <div> <a href="/products/list"><button type="button" class="btn btn-primary">Перейти к продукту</button></a></div>
+            </div>
+        }
+     }
+
+</div>
+
+

@@ -1,0 +1,18 @@
+﻿  
+
+<h1 class=" mt-5 "align="center" >Electrical instryment</h1>
+    <div class=" row  mt-4 mb-4 ml-4">
+        @{
+            foreach (var Electrical in Model.getIAllElectrical)
+            {
+                <div class=" po col-lg-2 col-md-2 ml-4 mt-4">
+                    <div class="pi"> @Electrical.name</div>
+                    <div ><img src="@Electrical.img" alt="@Electrical.name" title="@Electrical.name" /></div>
+                    <p>shortDesc : @Electrical.shortDesc</p>
+                    <p>cost : @Electrical.firstСost.ToString("c") </p>                
+                    <p>available : @Electrical.available</p>  
+                    <a href="#"><button type="button" class="btn btn-primary">Buy</button></a>
+                </div>
+            }
+        }
+    </div>
