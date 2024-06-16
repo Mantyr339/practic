@@ -19,7 +19,7 @@ namespace PractikaVovk.Controllers
         }
         public ViewResult Index()
         {
-            ViewBag.Title = "Home page";
+            ViewBag.Title = "Home pag";
             ListElectricalModel obj = new ListElectricalModel(); 
             obj.getIAllElectrical = _allProducts.IAllElectrical;
             obj.getIAllCategory = "Category";//_allCategory.IAllCategory;
